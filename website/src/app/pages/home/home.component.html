@@ -1,0 +1,219 @@
+<section class="bg">
+  <div class="container">
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlexAlign="space-between center" class="layout-container">
+      <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="home_content">
+        <h1 class="fw-bolder fb1">24/7 onspot break-down support</h1>
+        <div class="mt-4 mb-4"><p class="f24 fb3">anytime anywhere in india</p></div>
+        <div class="mt-3 mb-3"><button mat-raised-button class="primary-btn">
+          <span class="f16 fb2">Book Service Now</span>&nbsp;<i class="icofont-double-right icofont-2x"></i>
+        </button></div>
+      </div>
+      <div fxFlex gdAlignColumns="center" gdAlignRows="center">
+        <div fxHide.xs>
+          <img src="./assets/truck.png" alt="RA truck">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container layout">
+    <div class="m-5 d-flex flex-column text-center">
+      <p class="fw-bolder fb1 f36">Subscription Plan</p>
+      <p class="fw-normal fb1">We bring you the best price plans for you</p>
+    </div>
+    <div class="mt-5 mb-5">
+      <div fxLayout="row" fxLayout.xs="column">
+        <div fxFlex="25" fxFlex.xs="100" class="m-3 plan-card" *ngFor="let p of plans">
+          <div class="d-flex flex-row justify-content-between">
+            <div class="mt-3">
+              <p class="fb3 fw-bold f18">{{p.name}}</p>
+              <p class="fb1 fw-bold f28">&#8377;&nbsp;{{p.price}}</p>
+            </div>
+            <div class="card-icon"><mat-icon>{{p.icon}}</mat-icon></div>
+          </div>
+          <div class="mt-2">
+            <div class="mt-3 d-flex" *ngFor="let s of p.services">
+              <span *ngIf="s.status"><i class="m-1 fw-bold text-success icofont-check"></i></span>
+              <span *ngIf="!s.status"><i class="m-1 fw-bold text-danger icofont-close"></i></span>
+              <p class="mb-1 fb3 f14">{{s.name}}</p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <button mat-raised-button class="primary-btn">Purchase Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="m-3" align="end">
+        <p class="fw-bold fb3 f14">for more plans...</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="my-5" fxLayout="row wrap" fxLayoutGap="50px" fxLayoutGap.xs="0">
+      <div fxFlex="30" fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
+        <div class="profile_card">
+          <img src="./assets/whatdoesabusinessanalystdo_FB.jpeg" alt="">
+          <div class="p-3">
+            <small class="text-muted f12">Software Engineer</small>
+            <p class="fw-bold f14">NaGoo</p>
+          </div>
+        </div>
+      </div>
+      <div fxFlex fxFlex.xs="100" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
+        <div class="px-3 profile_content">
+          <p class="mb-1 fw-normal fr f14">
+            The definition of business is an occupation or trade and the purchase and sale of products or services to make a profit. An example of business is farming. An example of business is a house sale. noun. An organized entity whose purpose is to sell services or goods to customers in order to earn a profit for the owners.</p>
+          <small class="text-muted f12 fr">-Nagoo</small>
+        </div>
+      </div>
+    </div>
+    <div class="my-5" fxLayout="row wrap" fxLayoutGap="50px"  fxLayoutGap.xs="0">
+      <div fxFlex="65" fxFlex.xs="100" fxFlex.sm="50" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
+        <div class="px-3 profile_content-1">
+          <p class="mb-1 fw-normal fr f14">
+            The definition of business is an occupation or trade and the purchase and sale of products or services to make a profit. An example of business is farming. An example of business is a house sale. noun. An organized entity whose purpose is to sell services or goods to customers in order to earn a profit for the owners.</p>
+          <small class="text-muted f12 fr">-Nagoo</small>
+        </div>
+      </div>
+      <div fxFlex fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
+        <div class="profile_card">
+          <img src="./assets/whatdoesabusinessanalystdo_FB.jpeg" alt="">
+          <div class="p-3">
+            <small class="text-muted f12">Software Engineer</small>
+            <p class="fw-bold f14">NaGoo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-5" fxLayout="row wrap" fxLayoutGap="50px" fxLayoutGap.xs="0">
+      <div fxFlex="30" fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
+        <div class="profile_card">
+          <img src="./assets/whatdoesabusinessanalystdo_FB.jpeg" alt="">
+          <div class="p-3">
+            <small class="text-muted f12">Software Engineer</small>
+            <p class="fw-bold f14">NaGoo</p>
+          </div>
+        </div>
+      </div>
+      <div fxFlex fxFlex.xs="100" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
+        <div class="px-3 profile_content">
+          <p class="mb-1 fw-normal fr f14">
+            The definition of business is an occupation or trade and the purchase and sale of products or services to make a profit. An example of business is farming. An example of business is a house sale. noun. An organized entity whose purpose is to sell services or goods to customers in order to earn a profit for the owners.</p>
+          <small class="text-muted f12 fr">-Nagoo</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="layout">
+  <div class="container">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between">
+      <div fxFlex gdAlignRows="center">
+        <div class="ra_card">
+          <div class="header"><mat-icon class="mb-4 f36">supervised_user_circle</mat-icon></div>
+          <div class="mt-4"><p class="fw-bolder f32 text-light">5000+</p></div>
+          <div><small class="f12">Service Partners</small></div>
+        </div>
+      </div>
+      <div fxFlex gdAlignRows="center">
+        <div class="ra_card">
+          <div class="header"><mat-icon class="mb-4 f36">pin_drop</mat-icon></div>
+          <div class="mt-4"><p class="fw-bolder f32 text-light">16650+</p></div>
+          <div><small class="f12">Pin Codes</small></div>
+        </div>
+      </div>
+      <div fxFlex gdAlignRows="center">
+        <div class="ra_card">
+          <div class="header"><mat-icon class="mb-4 f36">settings</mat-icon></div>
+          <div class="mt-4"><p class="fw-bolder f32 text-light">1Million+</p></div>
+          <div><small class="f12">Vehicle Mobilised</small></div>
+        </div>
+      </div>
+      <div fxFlex gdAlignRows="center">
+        <div class="ra_card">
+          <div class="header"><mat-icon class="mb-4 f36">favorite</mat-icon></div>
+          <div class="mt-4"><p class="fw-bolder f32 text-light">100000+</p></div>
+          <div><small class="f12">Subscribed Customers</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="servicePartner layout">
+  <div class="container">
+    <div fxLayout="row" fxLayout.xs="column">
+      <div fxFlex fxHide.xs fxHide.sm>
+        <div><img src="./assets/partner.png" alt=""></div>
+      </div>
+      <div fxFlex class="mt-4">
+        <div class="d-flex flex-column">
+          <div class="mb-3">
+            <p class="fw-bolder fb1 f42">Be Our Service Partner</p>
+            <p class="mt-4 fw-normal fb1">Become our RSA partner & get assured business & take your business next level with us.
+              Choose your path to partnership & get all the support you need to succeed.</p>
+          </div>
+          <div class="mt-3">
+            <form>
+              <div class="d-flex flex-column">
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Enter your name">
+                <mat-icon matPrefix class="mx-2">account_circle</mat-icon>
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Enter your name">
+                <mat-icon matPrefix class="mx-2">email</mat-icon>
+              </mat-form-field>
+                <mat-checkbox class="example-margin"><span>I agree with <a href="">Terms & Conditions</a></span></mat-checkbox>
+                <div class="mt-3">
+                  <button mat-raised-button type="button" class="joinUs_btn">Join Us</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="yellowBanner">
+      <div align="center" class="mb-3">
+        <h1 class="fb1 fw-bolder">One of the leading 24/7 roadside assistance service provider for <br> bikes & cars across india</h1>
+      </div>
+      <div class="mt-3">
+        <p class="fw-light fl">ReadyAssist provides 24/7 on the spot breakdown support, flat tyre puncture repairs, fixes for starting
+          problems, battery jumpstart & towing service to customers through our annual subscriptions & on-demand.
+          ReadyAssist services are available across any nook and corner of India to our customers through the
+          subscription model. Customers in cities like Bengaluru, Mumbai, Mysore, Gurugram, Delhi, Pune, Chennai,
+          Hyderabad, Jaipur, Ahmedabad, Indore, Patna, Kolkata, Bhuvaneshwar, Chandigarh, Udaipur, Surat, Nagpur, Nasik,
+          Vishakapatnam, Vijayawada, Coimbatore, Mangalore, Trivandrum, Kochi, Calicut, Guwahati, Goa, Pondicherry &
+          Lucknow can avail our services through an on-demand model as well.</p>
+        <p class="fw-light fl">ReadyAssist provides 24/7 onspot breakdown support & towing service anytime anywhere in India. Our services
+          includes Onspot flat tyre fixing for Tube & Tubeless puncture, spare tyre change, stepney change, battery
+          jumpstart, clutch cable replacements, acceleratory cable replacements, spark plug replacement, onspot minor
+          repairs, emergency fuel delivery, bike flatbed towing, car flatbed towing, car safe-lift towing, car
+          chain-lift towing. We support all the models for the brands like Audi, BMW, Benz, Landrover, Prosche, Honda,
+          Hyundai, Toyota, Mahindra, TATA, Jaguar, Nissan, Dustan, Maruti Suzuki, Ford, Harley Davidson, Ducati, Kia,
+          KTM, Hero, Bajaj, Hyosung, Yahama, Royal Enfield, TVS, kawasaki, LML, Triumph, Indian Motorcycle, Aprilia,
+          Suzuki Hayabuza, Intruder. Our services on demand are available anywhere in cities like Bengaluru, Mumbai,
+          Mysore, Gurugram, Delhi, Pune, Chennai & Hyderabad including Koramangala, Indiranagar, Yelankha, Peenya,
+          Rajajinagar, Malleshwaram, CV Raman Nagar, Vasanth Nagar, MG Road, Ulsoor, Madiwala, Singasandara,
+          Bomanahalli, Electronic city, Bannerghatta Road, NICE Road, BTM, Jayanagar, JP Nagar, Banashankari, Banaswadi,
+          HRBR Layout, Kamanahalli, Kalyan Nagar, Nagawara, Manyata Tech Park, Hebbal, RT Nagar, EcoSpace, Belandur,
+          CESNA Tech Park, RMZ Infinity, Domlur, EGL (Embassy Golf Link), Bagmanae Tech Park, Audugodi, Uttarahalli,
+          Vijayanagar, Nagarbhavi, Sarjapur, Outring Road, Hosa Road, Whitefield, ITPL, Marthahalli, HAL, Old Airport
+          Road, Jeevan Bhima Nagar, Tippasandara, Mahadevpura, KR Puram, Yeshwantpur, HSR Layout, Madhapur , Kondapur,
+          Gachibowli , Jubilee Hills , Banjara Hills, Begumpet , Secunderabad, Ameerpet , Kukatpally , Hi Tech City,
+          Mehdipatnam, Film Nagar, Ameerpet, Lakdikapul, Manikonda, Financial district, Miyapur, Lingampalli /
+          Lingampally, Hafeezpet, Old Bowenpally, Bala Nagar, Tarnaka, Somajiguda, Attapur, Moosapet, Borabanda,
+          Botanical garden.</p>
+      </div>
+    </div>
+  </div>
+</section>

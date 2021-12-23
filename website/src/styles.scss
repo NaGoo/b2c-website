@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;background-color: #ffffff }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;width: 100vw }
+@font-face {
+  font-family: fb1;
+  src: url("./assets/Fira_Sans/FiraSans-ExtraBold.ttf") format("opentype");
+}
+@font-face {
+  font-family: fb2;
+  src: url("./assets/Fira_Sans/FiraSans-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: fl;
+  src: url("./assets/Fira_Sans/FiraSans-Light.ttf") format("opentype");
+}
+@font-face {
+  font-family: fr;
+  src: url("./assets/Fira_Sans/FiraSans-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: fm;
+  src: url("./assets/Fira_Sans/FiraSans-medium.ttf") format("opentype");
+}
+@font-face {
+  font-family: fb3;
+  src: url("./assets/Fira_Sans/FiraSans-SemiBold.ttf") format("opentype");
+}
+.ptr{cursor: pointer}
+.f10{ font-size: 10px}
+.f12{ font-size: 12px}
+.f13{ font-size: 13px}
+.f14{ font-size: 14px}
+.f16{ font-size: 16px}
+.f18{ font-size: 18px}
+.f20{ font-size: 20px}
+.f22{ font-size: 22px}
+.f24{ font-size: 24px}
+.f28{ font-size: 28px}
+.f32{ font-size: 32px}
+.f36{ font-size: 36px}
+.f42{ font-size: 42px}
+.layout-container{
+  //min-height: 92vh;
+  padding: 150px 0;
+}
+.primary-btn {
+  color: #ffffff;
+  background: rgb(104,107,107);
+  background: linear-gradient(0deg, rgba(64, 64, 64, 1) 0%, rgba(16, 16, 16, 1) 45%);
+}
