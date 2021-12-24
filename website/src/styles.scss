@@ -1,7 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%;background-color: #ffffff }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;width: 100vw }
 @font-face {
   font-family: fBolder;
   src: url("./assets/Fira_Sans/FiraSans-ExtraBold.ttf") format("opentype");
@@ -26,6 +23,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;width: 100vw
   font-family: fSemiBold;
   src: url("./assets/Fira_Sans/FiraSans-SemiBold.ttf") format("opentype");
 }
+html, body { height: 100%;background-color: #ffffff }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;width: 100vw }
+
 .ptr{cursor: pointer}
 .f10{ font-size: 10px}
 .f12{ font-size: 12px}
@@ -47,7 +47,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;width: 100vw
 .primary-btn {
   color: #ffffff;
   background: rgb(104,107,107);
-  background: linear-gradient(0deg, rgba(64, 64, 64, 1) 0%, rgba(16, 16, 16, 1) 45%);
+  background: linear-gradient(0deg, rgba(64, 64, 64, 1) 0%, rgba(16, 16, 16, 1) 70%);
 }
 .fb1{font-family: fBolder, sans-serif}
 .fb2{font-family: fBold, sans-serif}
@@ -55,3 +55,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;width: 100vw
 .fl{font-family: fLight, sans-serif}
 .fr{font-family: fRegular, sans-serif}
 .fm{font-family: fMedium, sans-serif}
+p, h1, h2, h3, h4, h5, h6, div, span, li {
+  font-family: fRegular, sans-serif;
+}
