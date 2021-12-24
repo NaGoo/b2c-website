@@ -4,11 +4,11 @@
       <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="home_content">
         <h1 class="fw-bolder fb1">24/7 onspot break-down support</h1>
         <div class="mt-4 mb-4"><p class="f24 fb3">anytime anywhere in india</p></div>
-        <div class="mt-3 mb-3"><button mat-raised-button class="primary-btn">
+        <div class="mt-3 mb-3"><button mat-raised-button class="py-1 primary-btn">
           <span class="f16 fb2">Book Service Now</span>&nbsp;<i class="icofont-double-right icofont-2x"></i>
         </button></div>
       </div>
-      <div fxFlex gdAlignColumns="center" gdAlignRows="center">
+      <div fxFlex gdAlignColumns="center" gdAlignRows="end">
         <div fxHide.xs>
           <img src="./assets/truck.png" alt="RA truck">
         </div>
@@ -19,12 +19,12 @@
 <section>
   <div class="container layout">
     <div class="m-5 d-flex flex-column text-center">
-      <p class="fw-bolder fb1 f36">Subscription Plan</p>
-      <p class="fw-normal fb1">We bring you the best price plans for you</p>
+      <p class="fw-bolder fb1 f42">Subscription Plan</p>
+      <p class="mt-1 fw-normal text-muted fr">We bring you the best price plans for you</p>
     </div>
     <div class="mt-5 mb-5">
       <div fxLayout="row" fxLayout.xs="column">
-        <div fxFlex="25" fxFlex.xs="100" class="m-3 plan-card" *ngFor="let p of plans">
+        <div fxFlex="33" fxFlex.xs="100" class="m-3 plan-card" *ngFor="let p of plans" style="height: 500px">
           <div class="d-flex flex-row justify-content-between">
             <div class="mt-3">
               <p class="fb3 fw-bold f18">{{p.name}}</p>
@@ -32,15 +32,15 @@
             </div>
             <div class="card-icon"><mat-icon>{{p.icon}}</mat-icon></div>
           </div>
-          <div class="mt-2">
+          <div class="mt-5">
             <div class="mt-3 d-flex" *ngFor="let s of p.services">
               <span *ngIf="s.status"><i class="m-1 fw-bold text-success icofont-check"></i></span>
               <span *ngIf="!s.status"><i class="m-1 fw-bold text-danger icofont-close"></i></span>
               <p class="mb-1 fb3 f14">{{s.name}}</p>
             </div>
           </div>
-          <div class="mt-3">
-            <button mat-raised-button class="primary-btn">Purchase Now</button>
+          <div class="mt-5">
+            <button mat-raised-button class="mt-3 primary-btn">Purchase Now</button>
           </div>
         </div>
       </div>
@@ -55,10 +55,10 @@
     <div class="my-5" fxLayout="row wrap" fxLayoutGap="50px" fxLayoutGap.xs="0">
       <div fxFlex="30" fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
         <div class="profile_card">
-          <img src="./assets/whatdoesabusinessanalystdo_FB.jpeg" alt="">
+          <div class="profile"><img src="./assets/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
           <div class="p-3">
-            <small class="text-muted f12">Software Engineer</small>
-            <p class="fw-bold f14">NaGoo</p>
+            <small class="text-muted f12 fr">Software Engineer</small>
+            <p class="fw-bold f14 fb3">NAGARAJAN</p>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
       </div>
       <div fxFlex fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
         <div class="profile_card">
-          <img src="./assets/whatdoesabusinessanalystdo_FB.jpeg" alt="">
+          <div class="profile"><img src="./assets/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
           <div class="p-3">
             <small class="text-muted f12">Software Engineer</small>
             <p class="fw-bold f14">NaGoo</p>
@@ -91,7 +91,7 @@
     <div class="my-5" fxLayout="row wrap" fxLayoutGap="50px" fxLayoutGap.xs="0">
       <div fxFlex="30" fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
         <div class="profile_card">
-          <img src="./assets/whatdoesabusinessanalystdo_FB.jpeg" alt="">
+          <div class="profile"><img src="./assets/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
           <div class="p-3">
             <small class="text-muted f12">Software Engineer</small>
             <p class="fw-bold f14">NaGoo</p>
@@ -110,48 +110,53 @@
 </section>
 <section class="layout">
   <div class="container">
-    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between">
-      <div fxFlex gdAlignRows="center">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center">
+      <div>
         <div class="ra_card">
           <div class="header"><mat-icon class="mb-4 f36">supervised_user_circle</mat-icon></div>
           <div class="mt-4"><p class="fw-bolder f32 text-light">5000+</p></div>
-          <div><small class="f12">Service Partners</small></div>
+          <div><small class="f12 fr">Service Partners</small></div>
         </div>
       </div>
-      <div fxFlex gdAlignRows="center">
+      <div>
         <div class="ra_card">
           <div class="header"><mat-icon class="mb-4 f36">pin_drop</mat-icon></div>
           <div class="mt-4"><p class="fw-bolder f32 text-light">16650+</p></div>
-          <div><small class="f12">Pin Codes</small></div>
+          <div><small class="f12 fr">Pin Codes</small></div>
         </div>
       </div>
-      <div fxFlex gdAlignRows="center">
+      <div>
         <div class="ra_card">
           <div class="header"><mat-icon class="mb-4 f36">settings</mat-icon></div>
           <div class="mt-4"><p class="fw-bolder f32 text-light">1Million+</p></div>
-          <div><small class="f12">Vehicle Mobilised</small></div>
+          <div><small class="f12 fr">Vehicle Mobilised</small></div>
         </div>
       </div>
-      <div fxFlex gdAlignRows="center">
+      <div>
         <div class="ra_card">
           <div class="header"><mat-icon class="mb-4 f36">favorite</mat-icon></div>
           <div class="mt-4"><p class="fw-bolder f32 text-light">100000+</p></div>
-          <div><small class="f12">Subscribed Customers</small></div>
+          <div><small class="f12 fr">Subscribed Customers</small></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<section class="layout">
+  <div class="container">
+    <div id="elfsight-widget-container" class="elfsight-app-1db53b53-d81c-4a26-987e-b93e1cbd2d7c"></div>
+  </div>
+</section>
 <section class="servicePartner layout">
   <div class="container">
-    <div fxLayout="row" fxLayout.xs="column">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
       <div fxFlex fxHide.xs fxHide.sm>
-        <div><img src="./assets/partner.png" alt=""></div>
+        <div><img src="./assets/People%20At%20Work.jpg" alt=""></div>
       </div>
       <div fxFlex class="mt-4">
         <div class="d-flex flex-column">
           <div class="mb-3">
-            <p class="fw-bolder fb1 f42">Be Our Service Partner</p>
+            <p class="fw-bolder fb1 f42" style="line-height: 42px">Be Our Service Partner</p>
             <p class="mt-4 fw-normal fb1">Become our RSA partner & get assured business & take your business next level with us.
               Choose your path to partnership & get all the support you need to succeed.</p>
           </div>
@@ -159,12 +164,12 @@
             <form>
               <div class="d-flex flex-column">
               <mat-form-field appearance="outline">
-                <mat-label>Name</mat-label>
+                <mat-label class="fw-bold text-dark">Name</mat-label>
                 <input matInput placeholder="Enter your name">
                 <mat-icon matPrefix class="mx-2">account_circle</mat-icon>
               </mat-form-field>
               <mat-form-field appearance="outline">
-                <mat-label>Email</mat-label>
+                <mat-label class="fw-bold text-dark">Email</mat-label>
                 <input matInput placeholder="Enter your name">
                 <mat-icon matPrefix class="mx-2">email</mat-icon>
               </mat-form-field>
@@ -178,6 +183,11 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+<section class="layout">
+  <div class="container">
+    <div class="elfsight-app-93060222-adc4-434c-ae7b-6962237d8cc5"></div>
   </div>
 </section>
 <section>

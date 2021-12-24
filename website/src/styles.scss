@@ -3,27 +3,27 @@
 html, body { height: 100%;background-color: #ffffff }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;width: 100vw }
 @font-face {
-  font-family: fb1;
+  font-family: fBolder;
   src: url("./assets/Fira_Sans/FiraSans-ExtraBold.ttf") format("opentype");
 }
 @font-face {
-  font-family: fb2;
+  font-family: fBold;
   src: url("./assets/Fira_Sans/FiraSans-Bold.ttf") format("opentype");
 }
 @font-face {
-  font-family: fl;
+  font-family: fLight;
   src: url("./assets/Fira_Sans/FiraSans-Light.ttf") format("opentype");
 }
 @font-face {
-  font-family: fr;
+  font-family: fRegular;
   src: url("./assets/Fira_Sans/FiraSans-Regular.ttf") format("opentype");
 }
 @font-face {
-  font-family: fm;
+  font-family: fMedium;
   src: url("./assets/Fira_Sans/FiraSans-medium.ttf") format("opentype");
 }
 @font-face {
-  font-family: fb3;
+  font-family: fSemiBold;
   src: url("./assets/Fira_Sans/FiraSans-SemiBold.ttf") format("opentype");
 }
 .ptr{cursor: pointer}
@@ -49,3 +49,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;width: 100vw
   background: rgb(104,107,107);
   background: linear-gradient(0deg, rgba(64, 64, 64, 1) 0%, rgba(16, 16, 16, 1) 45%);
 }
+.fb1{font-family: fBolder, sans-serif}
+.fb2{font-family: fBold, sans-serif}
+.fb3{font-family: fSemiBold, sans-serif}
+.fl{font-family: fLight, sans-serif}
+.fr{font-family: fRegular, sans-serif}
+.fm{font-family: fMedium, sans-serif}
