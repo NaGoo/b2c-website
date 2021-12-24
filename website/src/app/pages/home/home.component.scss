@@ -1,11 +1,20 @@
+h1{
+  font-family: fSemiBold, sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+}
+p {
+  font-family: fRegular, sans-serif;
+}
 .home_content{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   h1{
-    font-size: 72px;
-    max-width: 400px;
+    font-family: fBolder, sans-serif;
+    font-size: 68px;
+    max-width: 420px;
     line-height: 72px;
   }
   img {
@@ -93,4 +102,31 @@ mat-form-field{
 .joinUs_btn{
   background-color: #2dc653;
   color: #FFFFFF;
+}
+.board_member{
+  margin: 40px;
+  height: 320px;
+  width: 320px;
+  border-radius: 10px;
+  background-color: #efeeee;
+  background-image: linear-gradient(to bottom left, #efeeee, #faf8f8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  h4{font-family: fSemiBold, sans-serif;font-size: 28px}
+  p{font-family: fRegular, sans-serif}
+  .icon{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    i{color: #000000}
+  }
+  .profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: grey;
+  }
 }
