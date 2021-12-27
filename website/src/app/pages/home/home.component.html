@@ -1,15 +1,15 @@
 <section class="bg">
   <div class="container">
-    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlexAlign="space-between center" class="layout-container">
-      <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="home_content">
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxFlexAlign="space-between center" class="layout-container">
+      <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="ms-3 home_content" ngClass.xs="mobile">
         <h1 class="fw-bolder fb1">24/7 onspot break-down support</h1>
         <div class="mt-4 mb-4"><p class="f24 fr">anytime anywhere in india</p></div>
-        <div class="mt-3 mb-3"><button mat-raised-button class="py-1 primary-btn">
-          <span class="py-1 f16 fb2">Book Service Now</span>&nbsp;<i class="icofont-double-right icofont-2x"></i>
+        <div class="mt-3 mb-3"><button mat-raised-button class="py-1 primary-btn f14 fb2">Book Service Now
+          &nbsp;<i class="icofont-double-right icofont-2x"></i>
         </button>
         </div>
       </div>
-      <div fxFlex gdAlignColumns="center" gdAlignRows="end">
+      <div fxFlex gdAlignColumns="center" gdAlignRows="end" gdAlignRows.md="center" gdAlignRows.sm="center">
         <div fxHide.xs>
           <img src="./assets/truck.png" alt="RA truck">
         </div>
@@ -17,6 +17,7 @@
     </div>
   </div>
 </section>
+
 <section>
   <div class="container layout">
     <div class="m-5 d-flex flex-column text-center">
@@ -145,6 +146,10 @@
 </section>
 <section class="layout">
   <div class="container">
+    <div class="m-5 d-flex flex-column text-center">
+      <h1 class="mb-1">Endorsement</h1>
+      <p class="fw-normal f16 text-muted fr">What they say</p>
+    </div>
     <div id="elfsight-widget-container" class="elfsight-app-1db53b53-d81c-4a26-987e-b93e1cbd2d7c"></div>
   </div>
 </section>
@@ -195,9 +200,9 @@
       <div class="board_member">
         <div class="mb-3 profile"></div>
         <div>
-          <h4 class="mb-3">Vimal Singh SV</h4>
-          <p class="mb-1 f18 text-muted">Founder & CEO</p>
-          <p class="f18 fw-normal text-muted">ReadyAssist</p>
+          <h4 class="mb-1">Vimal Singh SV</h4>
+          <p class="mb-1 f164 text-muted">Founder & CEO</p>
+          <p class="f14 fw-normal text-muted">ReadyAssist</p>
         </div>
         <div class="d-flex justify-content-between">
           <div class="p-2 m-2 icon"><i class="icofont-facebook icofont-2x"></i></div>
@@ -211,9 +216,9 @@
       <div class="board_member" align="center">
         <div class="mb-3 profile"></div>
         <div>
-          <h4 class="mb-3">Vijay Sambamurthi</h4>
-          <p class="mb-1 f18 text-muted">Founder & Managing Partner</p>
-          <p class="f18 fw-normal text-muted">Lexygen</p>
+          <h4 class="mb-1">Vijay Sambamurthi</h4>
+          <p class="mb-1 f14 text-muted">Founder & Managing Partner</p>
+          <p class="f14 fw-normal text-muted">Lexygen</p>
         </div>
         <div class="d-flex justify-content-between">
           <div class="p-2 m-2 icon"><i class="icofont-facebook icofont-2x"></i></div>
@@ -225,9 +230,9 @@
       <div class="board_member" align="center">
         <div class="mb-3 profile"></div>
         <div>
-          <h4 class="mb-3">Vivek Subramanian</h4>
-          <p class="mb-1 f18 text-muted">Founder & CEO</p>
-          <p class="f18 fw-normal text-muted">AltLifeLab</p>
+          <h4 class="mb-1">Vivek Subramanian</h4>
+          <p class="mb-1 f14 text-muted">Founder & CEO</p>
+          <p class="f11 fw-normal text-muted">AltLifeLab</p>
         </div>
         <div class="d-flex justify-content-between">
           <div class="p-2 m-2 icon"><i class="icofont-facebook icofont-2x"></i></div>
@@ -239,9 +244,9 @@
       <div class="board_member" align="center">
         <div class="mb-3 profile"></div>
         <div>
-          <h4 class="mb-3">Satish Grampurohit</h4>
-          <p class="mb-1 f18 text-muted">Angel Investor & Advisor</p>
-          <p class="f18 fw-normal text-muted">&nbsp;</p>
+          <h4 class="mb-1">Satish Grampurohit</h4>
+          <p class="mb-1 f14 text-muted">Angel Investor & Advisor</p>
+          <p class="f14 fw-normal text-muted">&nbsp;</p>
         </div>
         <div class="d-flex justify-content-between">
           <div class="p-2 m-2 icon"><i class="icofont-facebook icofont-2x"></i></div>
@@ -258,6 +263,33 @@
     <div class="elfsight-app-93060222-adc4-434c-ae7b-6962237d8cc5"></div>
   </div>
 </section>
+<section class="layout">
+  <div class="container">
+    <div class="m-5 d-flex flex-column text-center">
+      <h1 class="mb-1">Blog</h1>
+      <p class="fw-normal f16 text-muted fr">Latest News about us on popular <br> magazines.</p>
+    </div>
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" class="news">
+      <div fxFlex="48" fxFlex.lg="24" *ngFor="let n of newsList">
+        <div class="d-flex flex-column justify-content-around">
+          <div class="py-3">
+            <img class="newsImage" [src]="n.url" alt='ReadyAssist Latest News'>
+          </div>
+          <div class="my-2 column">
+            <a [href]="n.newsUrl" aria-label="ReadyAssist news" target="_blank" rel="nofollow" class="fb3 f16">{{n.headLine}}</a>
+            <div class="my-2">
+              <p class="text-muted f12">{{n.desc}}</p>
+            </div>
+          </div>
+          <div>
+            <p class="fw-bold f14 fb3 text-dark">{{n.article}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="container">
     <div class="yellowBanner">

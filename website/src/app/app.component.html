@@ -1,31 +1,33 @@
-<div class="header" [ngStyle]="{'background-color': !scrolled ? '#fff9e7' : 'white'}">
-<div class="container">
-  <div class="pb-2 pt-3 d-flex justify-content-between">
-    <div class="d-flex">
-      <img class="mt-1 logo ptr" src="../assets/logo.png" alt="">
-      <div fxHide.xs><div class="vertical_line"></div></div>
-      <div fxHide.xs>
-        <div class="mt-1 d-flex" >
-          <p class="fw-bold m-3 f16 ptr">About</p>
-          <p class="fw-bold m-3 f16 ptr">JoinUs</p>
-          <p class="fw-bold m-3 f16 ptr">Contact</p>
+<div>
+  <div class="header" [ngStyle]="{'background-color': !scrolled ? '#fff9e7' : 'white'}">
+    <div class="container">
+      <div class="pb-2 pt-3 d-flex justify-content-between">
+        <div class="d-flex">
+          <img class="mt-1 logo ptr" src="../assets/logo.png" alt="">
+          <div fxHide.xs><div class="vertical_line"></div></div>
+          <div fxHide.xs>
+            <div class="mt-1 d-flex" >
+              <p class="fw-bold m-3 f16 ptr">About</p>
+              <p class="fw-bold m-3 f16 ptr">JoinUs</p>
+              <p class="fw-bold m-3 f16 ptr">Contact</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="mt-2" fxHide.xs><button mat-raised-button class="py-1 primary-btn f14 fb2">Subscribe Now&nbsp;<mat-icon class="mt-2 f16">star_border</mat-icon></button></div>
+          <div class="m-3" fxHide.gt-xs><mat-icon class="f28 ptr">menu</mat-icon></div>
         </div>
       </div>
-    </div>
-    <div class="d-flex">
-      <div class="mt-2" fxHide.xs><button mat-raised-button class="py-1 primary-btn">Subscribe Now&nbsp;<mat-icon class="mt-2 f16">star_border</mat-icon></button></div>
-      <div class="m-3" fxHide.gt-xs><mat-icon class="f28 ptr">menu</mat-icon></div>
+      <!--  <div fxLayout="row" fxFlexAlign="space-between center" class="pt-2">-->
+      <!--    <div class="d-flex" fxFlex="75">-->
+      <!--     -->
+      <!--    </div>-->
+      <!--    <div fxFlex="20" class="d-flex justify-content-between">-->
+      <!--     -->
+      <!--    </div>-->
+      <!--  </div>-->
     </div>
   </div>
-<!--  <div fxLayout="row" fxFlexAlign="space-between center" class="pt-2">-->
-<!--    <div class="d-flex" fxFlex="75">-->
-<!--     -->
-<!--    </div>-->
-<!--    <div fxFlex="20" class="d-flex justify-content-between">-->
-<!--     -->
-<!--    </div>-->
-<!--  </div>-->
-</div>
 </div>
 <router-outlet></router-outlet>
 <div class="footer">

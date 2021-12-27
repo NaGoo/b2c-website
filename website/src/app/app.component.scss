@@ -10,14 +10,16 @@
 }
 .vertical_line {
   height: 35px;
+  width: 0;
   margin: 10px 0 10px 20px;
+  background-color: #b5b5b5;
   border: 1px solid #b5b5b5;
 }
 .footer{
   background-color: #000000;
   color: #FFFFFF;
   padding: 100px 0;
-  width: 100vw;
+  width: 100%;
   p{font-family: fr , sans-serif}
   .social-media-icon {
     padding: 5px 10px;

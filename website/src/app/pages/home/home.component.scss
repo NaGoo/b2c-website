@@ -15,11 +15,18 @@ p {
     font-family: fBolder, sans-serif;
     font-size: 68px;
     max-width: 420px;
-    line-height: 72px;
+    line-height: 68px;
   }
   img {
     height: 100%;
     width: 100%;
+  }
+}
+.mobile {
+  h1{
+    font-family: fBolder, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
   }
 }
 .bg {background-color: #fff9e7}
@@ -104,9 +111,9 @@ mat-form-field{
   color: #FFFFFF;
 }
 .board_member{
-  margin: 40px;
   height: 320px;
   width: 320px;
+  margin-bottom: 20px;
   border-radius: 10px;
   background-color: #efeeee;
   background-image: linear-gradient(to bottom left, #efeeee, #faf8f8);
@@ -114,8 +121,7 @@ mat-form-field{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  h4{font-family: fSemiBold, sans-serif;font-size: 28px}
+  h4{font-family: fSemiBold, sans-serif;font-size: 20px}
   p{font-family: fRegular, sans-serif}
   .icon{
     cursor: pointer;
@@ -128,5 +134,17 @@ mat-form-field{
     width: 100px;
     border-radius: 50%;
     background-color: grey;
+  }
+}
+.news {
+  a{text-decoration: none;color: #000000}
+  .newsImage {
+    height: 200px;
+    width: 100%;
+    border-radius: 9px;
+    box-shadow: 4px 3px 16px -14px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 4px 3px 16px -14px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 4px 3px 16px -14px rgba(0, 0, 0, 0.51);
+    img {height: 100%;width: 100%}
   }
 }
