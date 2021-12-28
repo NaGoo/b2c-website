@@ -8,44 +8,74 @@ import {DOCUMENT} from '@angular/common';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
- plans = [
-   {
-     name: '4W Freedom Plan',
-     icon: 'settings',
-     price: 699,
-     services: [
-       {name: 'Free accommodation', status: true},
-       {name: 'One time Taxi Support', status: true},
-       {name: 'incidental Charges', status: false},
-       {name: 'No insurance', status: false},
-       {name: 'Towing Services', status: true},
-     ]
-   },
-   {
-     name: '2 Wheeler Pro',
-     icon: 'settings',
-     price: 1299,
-     services: [
-       {name: 'Free accommodation', status: true},
-       {name: 'One time Taxi Support', status: true},
-       {name: 'incidental Charges', status: false},
-       {name: 'No insurance', status: false},
-       {name: 'Towing Services', status: true},
-     ]
-   },
-   {
-     name: '4 Wheeler Pro',
-     icon: 'settings',
-     price: 2749,
-     services: [
-       {name: 'Free accommodation', status: true},
-       {name: 'One time Taxi Support', status: true},
-       {name: 'incidental Charges', status: false},
-       {name: 'No insurance', status: false},
-       {name: 'Towing Services', status: true},
-     ]
-   }
- ];
+  // plansList: OwlOptions = {
+  //   loop: false,
+  //   mouseDrag: true,
+  //   touchDrag: true,
+  //   pullDrag: true,
+  //   dots: true,
+  //   autoplay: false,
+  //   navSpeed: 2000,
+  //   navText: ['', ''],
+  //   responsive: {
+  //     0: {items: 1},
+  //     200: { items: 1 },
+  //     300: { items: 1 },
+  //     360: { items: 1 },
+  //     400: { items: 1 },
+  //     450: { items: 1 },
+  //     500: { items: 1 },
+  //     550: { items: 1 },
+  //     600: { items: 1 },
+  //     630: { items: 2 },
+  //     740: { items: 2 },
+  //     810: { items: 2 },
+  //     940: { items: 3 },
+  //     1024: { items: 4 },
+  //     1100: { items: 4 },
+  //     1200: { items: 4 },
+  //     1300: { items: 4 },
+  //   },
+  //   nav: false
+  // };
+  plans = [
+    {
+      name: '4W Freedom Plan',
+      icon: 'settings',
+      price: 699,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },
+    {
+      name: '2 Wheeler Pro',
+      icon: 'settings',
+      price: 1299,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },
+    {
+      name: '4 Wheeler Pro',
+      icon: 'settings',
+      price: 2749,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    }
+  ];
   newsList = [{headLine: 'Shell with ReadyAssist to set up quick lube change sites across India',
     newsUrl: 'https://auto.economictimes.indiatimes.com/news/oil-and-lubes/shell-partners-with-readyassist-to-offer-free-lube-change-service-at-5500-retail-locations/86547937',
     desc: 'New Delhi: Leading global lubricant supplier Shell on Monday joined hands with the Bengaluru-based 24x7 roadside assistance startup ReadyAssist to offer a convenient oil change service across the country.',
@@ -71,13 +101,55 @@ export class HomeComponent implements OnInit {
         '                      if you are stuck in the middle of the road:', url: '../../assets/news/news2.jpeg',
       article: 'YOURSTORY',
       logo: '../../assets/newIcons/logo_yourstory.svg'}];
-  constructor(
-    @Inject(DOCUMENT) private readonly document: Document
-  ) {
+  partners = 5000 - 3000;
+  vehicleServiced: any = 1000000 - 3000;
+  pinCodes = 16650 - 3000;
+  subCustomers = 100000 - 3000;
 
-  }
+  constructor() { }
 
   ngOnInit(): void {
+    this.partnersRun();
+    this.vehiclesRun();
+    this.pinCodesRun();
+    this.subCustomersRun();
+  }
+
+  partnersRun() {
+    const p = setInterval(() => {
+      this.partners++;
+      if (this.partners === 5000) {
+        clearInterval(p);
+      }
+    }, 1);
+  }
+
+  vehiclesRun() {
+    const p = setInterval(() => {
+      this.vehicleServiced++;
+      if (this.vehicleServiced === 1000000) {
+        clearInterval(p);
+        this.vehicleServiced = '1Million';
+      }
+    }, 1);
+  }
+
+  pinCodesRun() {
+    const p = setInterval(() => {
+      this.pinCodes++;
+      if (this.pinCodes === 16500) {
+        clearInterval(p);
+      }
+    }, 1);
+  }
+
+  subCustomersRun() {
+    const p = setInterval(() => {
+      this.subCustomers++;
+      if (this.subCustomers === 100000) {
+        clearInterval(p);
+      }
+    }, 1);
   }
 
 }

@@ -23,7 +23,7 @@
   font-family: fSemiBold;
   src: url("./assets/Fira_Sans/FiraSans-SemiBold.ttf") format("opentype");
 }
-html, body { height: 100%;background-color: #ffffff }
+html, body { height: 100%;background-color: #FAFAFA }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
 .ptr{cursor: pointer}
@@ -40,6 +40,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 .f32{ font-size: 32px}
 .f36{ font-size: 36px}
 .f42{ font-size: 42px}
+.f48{ font-size: 48px}
 .layout-container{
   //min-height: 92vh;
   height: 100vh;
