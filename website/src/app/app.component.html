@@ -31,8 +31,21 @@
 </div>
 <router-outlet></router-outlet>
 <div class="footer">
-  <div class="mb-5 container floating_cards"></div>
   <div class="container">
+   <div fxHide.xs fxHide.sm fxHide.md>
+     <div class="d-flex justify-content-between">
+       <div class="footer_card">
+         <div>
+           <p class="fw-bold f16 fb3">Follow us on <br> Instagram</p>
+           <button mat-raised-button class="follow">Follow</button>
+         </div>
+       </div>
+       <div class="footer_card"><img src="./assets/footer/nature.jpeg" alt=""></div>
+       <div class="footer_card"><img src="./assets/footer/nature.jpeg" alt=""></div>
+       <div class="footer_card"><img src="./assets/footer/nature.jpeg" alt=""></div>
+       <div class="footer_card"><img src="./assets/footer/nature.jpeg" alt=""></div>
+     </div>
+   </div>
     <div fxLayout="row wrap" fxFlexAlign="space-between" fxLayoutGap="30px">
       <div fxFlex fxFlex.xs="100" class="mt-3">
         <div>
@@ -65,4 +78,7 @@
       </div>
     </div>
   </div>
+  <div class="copyright"><div class="my-3 text-center text-light">
+    <p class="text-muted">Copyright&nbsp;&copy;&nbsp;2015 - 2022 : ReadyAssist - 24hrs vehicle Care.</p>
+  </div></div>
 </div>

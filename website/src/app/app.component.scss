@@ -16,15 +16,36 @@
   border: 1px solid #b5b5b5;
 }
 .footer{
+  margin-top: 200px;
   background-color: #000000;
   color: #FFFFFF;
-  padding: 100px 0;
+  padding: 100px 0 10px 0;
   width: 100%;
   p{font-family: fr , sans-serif}
   .social-media-icon {
     padding: 5px 10px;
-    background-color: #4361ee;
+    background-color: #5340FF;
     border-radius: 5px;
     margin-right: 5px;
+  }
+  .copyright {
+    margin-top: 100px;
+    p{
+      font-family: fRegular, sans-serif;
+    }
+  }
+  .footer_card {
+    margin-top: -200px;
+    height: 180px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #F0EAE8;
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    .follow{background-color: #F44336}
+    img {height: 100%;width: 100%;border-radius: 10px;}
   }
 }

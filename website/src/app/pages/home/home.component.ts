@@ -1,5 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
+import {OwlOptions} from 'ngx-owl-carousel-o';
 
 
 @Component({
@@ -8,36 +9,36 @@ import {DOCUMENT} from '@angular/common';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  // plansList: OwlOptions = {
-  //   loop: false,
-  //   mouseDrag: true,
-  //   touchDrag: true,
-  //   pullDrag: true,
-  //   dots: true,
-  //   autoplay: false,
-  //   navSpeed: 2000,
-  //   navText: ['', ''],
-  //   responsive: {
-  //     0: {items: 1},
-  //     200: { items: 1 },
-  //     300: { items: 1 },
-  //     360: { items: 1 },
-  //     400: { items: 1 },
-  //     450: { items: 1 },
-  //     500: { items: 1 },
-  //     550: { items: 1 },
-  //     600: { items: 1 },
-  //     630: { items: 2 },
-  //     740: { items: 2 },
-  //     810: { items: 2 },
-  //     940: { items: 3 },
-  //     1024: { items: 4 },
-  //     1100: { items: 4 },
-  //     1200: { items: 4 },
-  //     1300: { items: 4 },
-  //   },
-  //   nav: false
-  // };
+  plansList: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    autoplay: false,
+    navSpeed: 2000,
+    navText: ['', ''],
+    responsive: {
+      0: {items: 1},
+      200: { items: 1 },
+      300: { items: 1 },
+      360: { items: 1 },
+      400: { items: 1 },
+      450: { items: 1 },
+      500: { items: 1 },
+      550: { items: 1 },
+      600: { items: 1 },
+      630: { items: 2 },
+      740: { items: 2 },
+      810: { items: 2 },
+      940: { items: 3 },
+      1024: { items: 4 },
+      1100: { items: 4 },
+      1200: { items: 4 },
+      1300: { items: 4 },
+    },
+    nav: false
+  };
   plans = [
     {
       name: '4W Freedom Plan',
@@ -51,6 +52,78 @@ export class HomeComponent implements OnInit {
         {name: 'Towing Services', status: true},
       ]
     },
+    {
+      name: '4W Freedom Plan',
+      icon: 'settings',
+      price: 699,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },    {
+      name: '4W Freedom Plan',
+      icon: 'settings',
+      price: 699,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },    {
+      name: '4W Freedom Plan',
+      icon: 'settings',
+      price: 699,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },    {
+      name: '4W Freedom Plan',
+      icon: 'settings',
+      price: 699,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },    {
+      name: '4W Freedom Plan',
+      icon: 'settings',
+      price: 699,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },    {
+      name: '4W Freedom Plan',
+      icon: 'settings',
+      price: 699,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },
+
+
+
+
+
     {
       name: '2 Wheeler Pro',
       icon: 'settings',
