@@ -1,24 +1,32 @@
 <div>
-<!--  <div class="view"></div>-->
-  <section class="bg">
-    <div class="container">
-      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxFlexAlign="space-between center" class="layout-container">
-        <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="ms-3 home_content" ngClass.xs="mobile">
-          <h1 class="fw-bolder fb1">24/7 onspot break-down support</h1>
-          <div class="my-5"><p class="f24 fr">anytime anywhere in india</p></div>
-          <div class="my-5"><button mat-raised-button class="py-2 primary-btn f14 fb2"><span class="f16 fw-bold fb2 sp">Book Service Now</span>
-            &nbsp;<i class="icofont-double-right icofont-2x"></i>
-          </button>
-          </div>
-        </div>
-        <div fxFlex  gdAlignColumns="center" gdAlignRows="center" gdAlignRows.md="center" gdAlignRows.sm="center">
-          <div fxHide.xs>
-            <img src="./assets/truck.png" alt="RA truck">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="view">
+   <div class="container">
+     <div class="text-center mainContent" ngClass.xs="mobileMain" *ngIf="!scrolled">
+       <h1 class="fw-bolder fb1" ngClass.xs="f36">24/7 onspot break-down support</h1>
+       <div class="my-5"><p class="f24 fr">anytime anywhere in india</p></div>
+       <div><button mat-stroked-button class="py-2 book"><span class="f16 fw-bold fb2 sp">Book Service Now</span><i class="icofont-double-right icofont-2x"></i></button></div>
+     </div>
+   </div>
+  </div>
+<!--  <section class="bg">-->
+<!--    <div class="container">-->
+<!--      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxFlexAlign="space-between center" class="layout-container">-->
+<!--        <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="ms-3 home_content" ngClass.xs="mobile">-->
+<!--          <h1 class="fw-bolder fb1">24/7 onspot break-down support</h1>-->
+<!--          <div class="my-5"><p class="f24 fr">anytime anywhere in india</p></div>-->
+<!--          <div class="my-5"><button mat-raised-button class="py-2 primary-btn f14 fb2"><span class="f16 fw-bold fb2 sp">Book Service Now</span>-->
+<!--            &nbsp;<i class="icofont-double-right icofont-2x"></i>-->
+<!--          </button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div fxFlex  gdAlignColumns="center" gdAlignRows="center" gdAlignRows.md="center" gdAlignRows.sm="center">-->
+<!--          <div fxHide.xs>-->
+<!--            <img src="./assets/truck.png" alt="RA truck">-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
   <section>
     <div class="container layout">
@@ -31,7 +39,7 @@
           <ng-template carouselSlide>
             <div class="mt-5 mb-5">
               <div class="container">
-                <div class="plan-card">
+                <div class="plan-card" [ngStyle]="{'background-color': p.name !== '4W Freedom Plan' ? '#f5f3f3' : '#e3e1e1'}">
                   <div class="d-flex flex-row justify-content-between">
                     <div class="mt-3">
                       <p class="fb3 fw-bold f18">{{p.name}}</p>
@@ -104,6 +112,8 @@
         <div class="py-5 px-5 clients">
           <div class="d-flex flex-wrap justify-content-start align-content-center" ngClass.xs="d-flex flex-wrap justify-content-center">
             <div style="width: 180px"><p class="f14 fr">Trusted by more of india's best service providers</p></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
             <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
             <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
             <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>

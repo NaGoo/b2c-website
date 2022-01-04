@@ -1,4 +1,4 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {Component, HostListener, Inject, OnInit} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
 import {OwlOptions} from 'ngx-owl-carousel-o';
 
@@ -53,64 +53,9 @@ export class HomeComponent implements OnInit {
       ]
     },
     {
-      name: '4W Freedom Plan',
+      name: '2 Wheeler Pro',
       icon: 'settings',
-      price: 699,
-      services: [
-        {name: 'Free accommodation', status: true},
-        {name: 'One time Taxi Support', status: true},
-        {name: 'incidental Charges', status: false},
-        {name: 'No insurance', status: false},
-        {name: 'Towing Services', status: true},
-      ]
-    },    {
-      name: '4W Freedom Plan',
-      icon: 'settings',
-      price: 699,
-      services: [
-        {name: 'Free accommodation', status: true},
-        {name: 'One time Taxi Support', status: true},
-        {name: 'incidental Charges', status: false},
-        {name: 'No insurance', status: false},
-        {name: 'Towing Services', status: true},
-      ]
-    },    {
-      name: '4W Freedom Plan',
-      icon: 'settings',
-      price: 699,
-      services: [
-        {name: 'Free accommodation', status: true},
-        {name: 'One time Taxi Support', status: true},
-        {name: 'incidental Charges', status: false},
-        {name: 'No insurance', status: false},
-        {name: 'Towing Services', status: true},
-      ]
-    },    {
-      name: '4W Freedom Plan',
-      icon: 'settings',
-      price: 699,
-      services: [
-        {name: 'Free accommodation', status: true},
-        {name: 'One time Taxi Support', status: true},
-        {name: 'incidental Charges', status: false},
-        {name: 'No insurance', status: false},
-        {name: 'Towing Services', status: true},
-      ]
-    },    {
-      name: '4W Freedom Plan',
-      icon: 'settings',
-      price: 699,
-      services: [
-        {name: 'Free accommodation', status: true},
-        {name: 'One time Taxi Support', status: true},
-        {name: 'incidental Charges', status: false},
-        {name: 'No insurance', status: false},
-        {name: 'Towing Services', status: true},
-      ]
-    },    {
-      name: '4W Freedom Plan',
-      icon: 'settings',
-      price: 699,
+      price: 1299,
       services: [
         {name: 'Free accommodation', status: true},
         {name: 'One time Taxi Support', status: true},
@@ -119,15 +64,22 @@ export class HomeComponent implements OnInit {
         {name: 'Towing Services', status: true},
       ]
     },
-
-
-
-
-
     {
-      name: '2 Wheeler Pro',
+      name: '4 Wheeler Pro',
       icon: 'settings',
-      price: 1299,
+      price: 2749,
+      services: [
+        {name: 'Free accommodation', status: true},
+        {name: 'One time Taxi Support', status: true},
+        {name: 'incidental Charges', status: false},
+        {name: 'No insurance', status: false},
+        {name: 'Towing Services', status: true},
+      ]
+    },
+    {
+      name: '4 Wheeler Pro',
+      icon: 'settings',
+      price: 2749,
       services: [
         {name: 'Free accommodation', status: true},
         {name: 'One time Taxi Support', status: true},
@@ -179,15 +131,21 @@ export class HomeComponent implements OnInit {
   vehicleServiced: any = 1000000 - 3000;
   pinCodes = 16650 - 3000;
   subCustomers = 100000 - 3000;
+  scrolled = false;
+
 
   constructor() { }
+  @HostListener('window:scroll', ['$event'])
+
 
   ngOnInit(): void {
     this.partnersRun();
     this.vehiclesRun();
     this.pinCodesRun();
     this.subCustomersRun();
+    this.scrolled = window.pageYOffset > 200;
   }
+
 
   partnersRun() {
     const p = setInterval(() => {

@@ -1,20 +1,64 @@
-h1{
-  font-family: fSemiBold, sans-serif;
-  font-size: 42px;
-  line-height: 42px;
-  color: #333333;
-}
+
 
 .view {
   height: 100vh;
 }
 .view {
-  background: url("https://mdbootstrap.com/images/regular/nature/img%20(73).jpg")no-repeat center center fixed;
+  background: url("https://astroautomotive.com/wp-content/uploads/2018/05/featured-background-service-1300x399.jpg")no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1, p {
+    color: #FFFFFF;
+
+  }
+
 }
+.mainContent {
+  h1 {
+    font-family: fBold, sans-serif;
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .book {
+    border-color: #ffcc33;
+    color: #fff;
+    background: {
+      image: linear-gradient(45deg, #ffcc33 50%, transparent 50%);
+      position: 100%;
+      size: 400%;
+    }
+    transition: background 300ms ease-in-out;
+
+    &:hover {
+      color: #000000;
+      background-position: 0;
+    }
+  }
+  p {
+    font-family: fRegular, sans-serif;
+  }
+}
+
+.mobileMain {
+  h1 {
+    font-family: fBold, sans-serif;
+    font-size: 52px;
+    line-height: 60px;
+  }
+}
+h1{
+  font-family: fBold, sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+  color: #333333;
+}
+
 p {
   font-family: fRegular, sans-serif;
 }
@@ -46,7 +90,8 @@ p {
   p{color: #000000}
   padding: 15px 20px 30px 20px;
   border-radius: 10px;
-  background-color: #e3e1e1;
+  //background-color: #e3e1e1;
+  //background-color: #f6f6f6;
   .card-icon{
     height: 35px;
     border: 2px solid #6411ad;
