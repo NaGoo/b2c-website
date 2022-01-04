@@ -2,6 +2,18 @@ h1{
   font-family: fSemiBold, sans-serif;
   font-size: 42px;
   line-height: 42px;
+  color: #333333;
+}
+
+.view {
+  height: 100vh;
+}
+.view {
+  background: url("https://mdbootstrap.com/images/regular/nature/img%20(73).jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 p {
   font-family: fRegular, sans-serif;
@@ -133,7 +145,8 @@ mat-form-field{
   border-radius: 5px;
 }
 .joinUs_btn{
-  background-color: #2dc653;
+  background: rgb(76,175,80);
+  background: linear-gradient(0deg, rgba(76,175,80,1) 30%, rgba(76,175,85,1) 100%);
   color: #FFFFFF;
 }
 .board_member{
@@ -163,15 +176,16 @@ mat-form-field{
   }
 }
 .news {
-  .newsGrid {width: 330px}
-  .newsGridLg {width: 380px}
+  .newsGrid {width: 300px}
+  .newsGridLg {width: 350px}
   .newsGridXs {width: 100%}
-  .newsGridMd {width: 420px}
+  .newsGridMd {width: 360px}
   a{text-decoration: none;color: #000000}
   .newsImage {
     height: 200px;
     width: 100%;
-    border-radius: 9px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     box-shadow: 4px 3px 16px -14px rgba(0, 0, 0, 0.51);
     -webkit-box-shadow: 4px 3px 16px -14px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 4px 3px 16px -14px rgba(0, 0, 0, 0.51);

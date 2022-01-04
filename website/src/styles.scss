@@ -23,6 +23,9 @@
   font-family: fSemiBold;
   src: url("./assets/Fira_Sans/FiraSans-SemiBold.ttf") format("opentype");
 }
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 html, body { height: 100%;background-color: #FAFAFA }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
@@ -45,6 +48,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
   //min-height: 92vh;
   height: 100vh;
   padding: 150px 0;
+}
+.sp {
+  letter-spacing: 0.7px;
 }
 .primary-btn {
   color: #ffffff;

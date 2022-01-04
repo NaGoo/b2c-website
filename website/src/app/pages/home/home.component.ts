@@ -168,12 +168,13 @@ export class HomeComponent implements OnInit {
       url: '../../assets/news/flood.jpg',
       article: 'BW Auto World',
       logo: '../../assets/images/bw-auto-world.png'},
-    {headLine: 'This on-demand vehicle service and repair startup registered Rs 4 Cr revenue in first year of operation',
-      newsUrl: 'https://yourstory.com/2020/06/on-demand-vehicle-service-repair-startup-readyassist/amp',
-      desc: 'Here are the five best vehicle breakdown assistance platforms that can help/rescue you during monsoon\n' +
-        '                      if you are stuck in the middle of the road:', url: '../../assets/news/news2.jpeg',
-      article: 'YOURSTORY',
-      logo: '../../assets/newIcons/logo_yourstory.svg'}];
+    // {headLine: 'This on-demand vehicle service and repair startup registered Rs 4 Cr revenue in first year of operation',
+    //   newsUrl: 'https://yourstory.com/2020/06/on-demand-vehicle-service-repair-startup-readyassist/amp',
+    //   desc: 'Here are the five best vehicle breakdown assistance platforms that can help/rescue you during monsoon\n' +
+    //     '                      if you are stuck in the middle of the road:', url: '../../assets/news/news2.jpeg',
+    //   article: 'YOURSTORY',
+    //   logo: '../../assets/newIcons/logo_yourstory.svg'}
+    ];
   partners = 5000 - 3000;
   vehicleServiced: any = 1000000 - 3000;
   pinCodes = 16650 - 3000;
