@@ -11,6 +11,6 @@ export class AppComponent implements OnInit{
   hide = true;
   @HostListener('window:scroll', ['$event'])
   ngOnInit() {
-    this.scrolled = window.pageYOffset > 600;
+    this.scrolled = window.pageYOffset > 40;
   }
 }

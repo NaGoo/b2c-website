@@ -1,38 +1,60 @@
 <div>
-  <div class="view">
-   <div class="container">
-     <div class="text-center mainContent" ngClass.xs="mobileMain" *ngIf="!scrolled">
-       <h1 class="fw-bolder fb1" ngClass.xs="f36">24/7 onspot break-down support</h1>
-       <div class="my-5"><p class="f24 fr">anytime anywhere in india</p></div>
-       <div><button mat-stroked-button class="py-2 book"><span class="f16 fw-bold fb2 sp">Book Service Now</span><i class="icofont-double-right icofont-2x"></i></button></div>
-     </div>
-   </div>
-  </div>
-<!--  <section class="bg">-->
-<!--    <div class="container">-->
-<!--      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxFlexAlign="space-between center" class="layout-container">-->
-<!--        <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="ms-3 home_content" ngClass.xs="mobile">-->
-<!--          <h1 class="fw-bolder fb1">24/7 onspot break-down support</h1>-->
-<!--          <div class="my-5"><p class="f24 fr">anytime anywhere in india</p></div>-->
-<!--          <div class="my-5"><button mat-raised-button class="py-2 primary-btn f14 fb2"><span class="f16 fw-bold fb2 sp">Book Service Now</span>-->
-<!--            &nbsp;<i class="icofont-double-right icofont-2x"></i>-->
-<!--          </button>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div fxFlex  gdAlignColumns="center" gdAlignRows="center" gdAlignRows.md="center" gdAlignRows.sm="center">-->
-<!--          <div fxHide.xs>-->
-<!--            <img src="./assets/truck.png" alt="RA truck">-->
+<!--  <div class="view">-->
+<!--   <div class="container">-->
+<!--     <div class="text-center mainContent" ngClass.xs="mobileMain" *ngIf="!scrolled">-->
+<!--       <h1 class="fw-bolder fb1" ngClass.xs="f36">24/7 onspot break-down support</h1>-->
+<!--       <div class="my-5"><p class="f24 fr">anytime anywhere in india</p></div>-->
+<!--       <div><button mat-stroked-button class="py-2 book"><span class="f16 fw-bold fb2 sp">Book Service Now</span><i class="icofont-double-right icofont-2x"></i></button></div>-->
+<!--     </div>-->
+<!--   </div>-->
+<!--  </div>-->
+  <section class="bg">
+    <div class="container">
+      <div class="mt-5 layout-container" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxFlexAlign="space-between center">
+        <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="ms-3 home_content" ngClass.xs="mobile">
+          <h1 class="fw-bolder fb1">24/7 onspot break-down support</h1>
+          <div class="my-5"><p class="f24 fr">anytime anywhere in india</p></div>
+          <div class="my-5"><button mat-raised-button class="py-2 primary-btn f14 fb2"><span class="f16 fw-bold fb2 sp">Book Service Now</span>
+            &nbsp;<i class="icofont-double-right icofont-2x"></i>
+          </button>
+          </div>
+        </div>
+        <div fxFlex  gdAlignColumns="center" gdAlignRows="center" gdAlignRows.md="center" gdAlignRows.sm="center">
+          <div fxHide.xs>
+            <img src="./assets/images/truck.png" alt="RA truck">
+          </div>
+        </div>
+      </div>
+<!--      <div class="mt-3 container">-->
+<!--        <div class="d-flex flex-row flex-wrap justify-content-evenly">-->
+<!--          <div *ngFor="let s of serviceList1" class="m-3 text-center">-->
+<!--            <div class="d-flex justify-content-center"><img [src]="s.image" height="60" width="60" alt=""></div>-->
+<!--            <p class="text-center fb3 f12">{{s.name}}</p>-->
 <!--          </div>-->
 <!--        </div>-->
 <!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
+    </div>
+  </section>
+  <section class="layout">
+    <div class="container">
+      <div class="m-5 d-flex flex-column text-center">
+        <h1 class="mb-2">Our <span class="color1 fb2 sp">Services</span></h1>
+        <p class="fw-normal f16 text-muted fr">anytime anywhere in india</p>
+      </div>
+      <div class="mt-5 d-flex flex-row flex-wrap justify-content-evenly">
+        <div *ngFor="let s of serviceList1" class="m-3 text-center">
+          <div class="d-flex justify-content-center"><img [src]="s.image" height="100" width="100" alt=""></div>
+          <p class="text-center fb3 f16">{{s.name}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section>
     <div class="container layout">
       <div class="m-5 d-flex flex-column text-center">
-        <h1>Subscription Plan</h1>
-        <p class="mt-1 fw-normal f16 text-muted fr">We bring you the best price plans for you</p>
+        <h1 class="mb-2">Subscription Plan</h1>
+        <p class="fw-normal f16 text-muted fr">We bring you the best price plans for you</p>
       </div>
       <owl-carousel-o [options]='plansList' >
         <ng-container *ngFor='let p of plans'>
@@ -106,23 +128,27 @@
 <!--    <div class="container">-->
 <!--    </div>-->
 <!--  </section>-->
+
+
   <section>
     <div class="container">
       <div class="mb-5">
         <div class="py-5 px-5 clients">
           <div class="d-flex flex-wrap justify-content-start align-content-center" ngClass.xs="d-flex flex-wrap justify-content-center">
             <div style="width: 180px"><p class="f14 fr">Trusted by more of india's best service providers</p></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
-            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
+            <div class="p-3 text-center client" ngClass.xs="clientXs"><img src="./assets/images/nike.png" alt=""></div>
           </div>
         </div>
       </div>
@@ -130,10 +156,10 @@
         <div class="my-5" fxLayout="row wrap" fxLayoutGap="50px" fxLayoutGap.xs="0">
           <div fxFlex="30" fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
             <div class="profile_card">
-              <div class="profile"><img src="./assets/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
+              <div class="profile"><img src="./assets/images/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
               <div class="p-3">
                 <p class="text-muted f16 fr fw-normal">Software Engineer</p>
-                <p class="fw-bold f20 fb3 mb-3">Praveen Chengan</p>
+                <p class="fw-bold f20 fb3 mb-3">Praveen Chackravarthy</p>
               </div>
             </div>
           </div>
@@ -155,7 +181,7 @@
           </div>
           <div fxFlex fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
             <div class="profile_card">
-              <div class="profile"><img src="./assets/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
+              <div class="profile"><img src="./assets/images/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
               <div class="p-3">
                 <p class="text-muted f16">Software Engineer</p>
                 <p class="fw-bold f20">NaGoo</p>
@@ -166,7 +192,7 @@
         <div class="my-5" fxLayout="row wrap" fxLayoutGap="50px" fxLayoutGap.xs="0">
           <div fxFlex="30" fxFlex.xs="100" fxFlex.sm="40" gdAlignColumns="center" gdAlignRows="start" gdAlignRows.xs="center">
             <div class="profile_card">
-              <div class="profile"><img src="./assets/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
+              <div class="profile"><img src="./assets/images/Screenshot%202021-12-24%20at%2011.40.37%20AM.png" alt=""></div>
               <div class="p-3">
                 <p class="text-muted f16">Software Engineer</p>
                 <p class="fw-bold f20">NaGoo</p>
@@ -278,11 +304,11 @@
     <div class="container">
       <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
         <div fxFlex fxHide.xs fxHide.sm>
-          <div><img src="./assets/People%20At%20Work.jpg" alt=""></div>
+          <div><img src="./assets/images/People%20At%20Work.jpg" alt=""></div>
         </div>
         <div fxFlex class="mt-4">
           <div class="container">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" ngClass.xs="text-center" ngClass.sm="text-center">
               <div class="mb-3">
                 <h1>Be Our Service Partner</h1>
                 <p class="mt-4 fw-normal fb1">Become our RSA partner & get assured business & take your business next level with us.
@@ -291,16 +317,20 @@
               <div class="mt-3">
                 <form>
                   <div class="d-flex flex-column">
-                    <mat-form-field appearance="outline">
-                      <mat-label class="fw-bold text-dark">Name</mat-label>
-                      <input matInput placeholder="Enter your name">
-                      <mat-icon matPrefix class="mx-2">account_circle</mat-icon>
-                    </mat-form-field>
-                    <mat-form-field appearance="outline">
-                      <mat-label class="fw-bold text-dark">Mobile</mat-label>
-                      <input matInput placeholder="Enter your name">
-                      <mat-icon matPrefix class="mx-2">call</mat-icon>
-                    </mat-form-field>
+                    <div>
+                      <mat-form-field appearance="outline" class="fullWidth">
+                        <mat-label class="fw-bold text-dark">Name</mat-label>
+                        <input matInput placeholder="Enter your name">
+                        <mat-icon matPrefix class="mx-2">account_circle</mat-icon>
+                      </mat-form-field>
+                    </div>
+                    <div>
+                      <mat-form-field appearance="outline" class="fullWidth">
+                        <mat-label class="fw-bold text-dark">Mobile</mat-label>
+                        <input matInput placeholder="Enter your name">
+                        <mat-icon matPrefix class="mx-2">call</mat-icon>
+                      </mat-form-field>
+                    </div>
                     <mat-checkbox class="example-margin"><span>I agree with <a href="">Terms & Conditions</a></span></mat-checkbox>
                     <div class="mt-3">
                       <button mat-raised-button type="button" class="joinUs_btn">Join Us</button>

@@ -28,7 +28,7 @@
 @import "tailwindcss/utilities";
 html, body { height: 100%;background-color: #FAFAFA }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
-
+.fullWidth {width: 100%}
 .ptr{cursor: pointer}
 .f10{ font-size: 10px}
 .f12{ font-size: 12px}
@@ -52,6 +52,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 .sp {
   letter-spacing: 0.7px;
 }
+.color1 {color: #FFCC33}
 .primary-btn {
   color: #ffffff;
   background: rgb(104,107,107);

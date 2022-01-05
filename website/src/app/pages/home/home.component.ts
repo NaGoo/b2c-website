@@ -1,5 +1,4 @@
 import {Component, HostListener, Inject, OnInit} from '@angular/core';
-import {DOCUMENT} from '@angular/common';
 import {OwlOptions} from 'ngx-owl-carousel-o';
 
 
@@ -39,6 +38,55 @@ export class HomeComponent implements OnInit {
     },
     nav: false
   };
+  serviceList1 = [
+    {
+      image: './assets/newIcons/ityre.svg',
+      name: 'Flat tyre fixing',
+      url: '/flat-tyre-puncture-repair.php'
+    },
+    {
+      image: './assets/newIcons/battery.svg',
+      name: 'Battery jumpStart',
+      url: '/battery-jumpstart.php'
+    },
+    {
+      image: './assets/newIcons/fuel.svg',
+      name: 'Emergency fuel',
+      url: '/petrol-diesel-fuel-delivery.php'
+    },
+    {
+      image: './assets/newIcons/key.svg',
+      name: 'Key lock assistance',
+      url: '/key-unlock-bike-car.php'
+    },
+    {
+      image: './assets/newIcons/towing.svg',
+      name: 'Towing service',
+      url: '/towing-service-readyassist.php'
+    },
+    {
+      image: './assets/newIcons/repair.svg',
+      name: 'Starting problem',
+      url: '/onspot-breakdown-starting-problem.php'
+    }
+  ];
+  serviceList2 = [
+    {
+      image: './assets/newIcons/key.svg',
+      name: 'Key lock assistance',
+      url: '/key-unlock-bike-car.php'
+    },
+    {
+      image: './assets/newIcons/towing.svg',
+      name: 'Towing service',
+      url: '/towing-service-readyassist.php'
+    },
+    {
+      image: './assets/newIcons/repair.svg',
+      name: 'Starting problem',
+      url: '/onspot-breakdown-starting-problem.php'
+    }
+  ];
   plans = [
     {
       name: '4W Freedom Plan',
@@ -127,10 +175,14 @@ export class HomeComponent implements OnInit {
     //   article: 'YOURSTORY',
     //   logo: '../../assets/newIcons/logo_yourstory.svg'}
     ];
-  partners = 5000 - 3000;
-  vehicleServiced: any = 1000000 - 3000;
-  pinCodes = 16650 - 3000;
-  subCustomers = 100000 - 3000;
+  // partners = 5000 - 3000;
+  // vehicleServiced = 1000000 - 3000;
+  // pinCodes = 16650 - 3000;
+  // subCustomers = 100000 - 3000;
+  partners = 5000;
+  vehicleServiced: any = '1Million';
+  pinCodes = 16650;
+  subCustomers = 100000;
   scrolled = false;
 
 
@@ -139,10 +191,10 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.partnersRun();
-    this.vehiclesRun();
-    this.pinCodesRun();
-    this.subCustomersRun();
+    // this.partnersRun();
+    // this.vehiclesRun();
+    // this.pinCodesRun();
+    // this.subCustomersRun();
     this.scrolled = window.pageYOffset > 200;
   }
 
@@ -157,29 +209,29 @@ export class HomeComponent implements OnInit {
   }
 
   vehiclesRun() {
-    const p = setInterval(() => {
+    const v = setInterval(() => {
       this.vehicleServiced++;
       if (this.vehicleServiced === 1000000) {
-        clearInterval(p);
-        this.vehicleServiced = '1Million';
+        clearInterval(v);
+       // this.vehicleServiced = '1Million';
       }
     }, 1);
   }
 
   pinCodesRun() {
-    const p = setInterval(() => {
+    const pin = setInterval(() => {
       this.pinCodes++;
       if (this.pinCodes === 16500) {
-        clearInterval(p);
+        clearInterval(pin);
       }
     }, 1);
   }
 
   subCustomersRun() {
-    const p = setInterval(() => {
+    const s = setInterval(() => {
       this.subCustomers++;
       if (this.subCustomers === 100000) {
-        clearInterval(p);
+        clearInterval(s);
       }
     }, 1);
   }

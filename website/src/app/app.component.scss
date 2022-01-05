@@ -36,6 +36,9 @@
   }
   .footer_card {
     margin-top: -200px;
+  }
+  .footer_insta_card {
+    margin-top: -200px;
     height: 180px;
     width: 200px;
     border-radius: 10px;
@@ -49,3 +52,42 @@
     img {height: 100%;width: 100%;border-radius: 10px;}
   }
 }
+
+
+.card {
+  width: 200px;
+  height: 180px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 20px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+  -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+

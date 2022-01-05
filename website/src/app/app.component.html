@@ -1,9 +1,11 @@
+
 <div>
-  <div class="header" [ngStyle]="{'background-color': !scrolled ? 'transparent' : '#FAFAFA', 'color' : scrolled ? 'black' : 'white'}">
+<!--  <div class="header" [ngStyle]="{'background-color': !scrolled ? 'transparent' : '#FAFAFA', 'color' : scrolled ? 'black' : 'white'}">-->
+  <div class="header" [ngStyle]="{'background-color': !scrolled ? '#fff9e7' : '#FAFAFA'}">
     <div class="container">
       <div class="pb-2 pt-3 d-flex justify-content-between">
         <div class="d-flex">
-          <img class="mt-1 logo ptr" src="../assets/logo.png" alt="">
+          <img class="mt-1 logo ptr" src="../assets/images/logo.png" alt="">
           <div fxHide.xs><div class="vertical_line"></div></div>
           <div fxHide.xs>
             <div class="mt-1 d-flex" >
@@ -34,22 +36,56 @@
   <div class="container">
    <div fxHide.xs fxHide.sm fxHide.md>
      <div class="d-flex justify-content-between">
-       <div class="footer_card">
+       <div class="footer_insta_card">
          <div>
            <p class="fw-bold f16 fb3">Follow us on <br> Instagram</p>
            <button mat-raised-button class="follow">Follow</button>
          </div>
        </div>
-       <div class="footer_card"><img src="./assets/footer/nature.jpeg" alt=""></div>
-       <div class="footer_card"><img src="./assets/footer/nature.jpeg" alt=""></div>
-       <div class="footer_card"><img src="./assets/footer/nature.jpeg" alt=""></div>
-       <div class="footer_card"><img src="./assets/footer/nature.jpeg" alt=""></div>
+       <div class="footer_card">
+         <div class="card 1">
+           <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+           <div class="card_title title-white">
+<!--             <p>Card Title</p>-->
+           </div>
+         </div>
+       </div>
+       <div class="footer_card">
+         <div class="card 2">
+           <div class="card_image">
+             <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+           </div>
+           <div class="card_title title-white">
+<!--             <p>Card Title</p>-->
+           </div>
+         </div>
+       </div>
+       <div class="footer_card">
+         <div class="card 4">
+           <div class="card_image">
+             <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+           </div>
+           <div class="card_title title-black">
+<!--             <p>Card Title</p>-->
+           </div>
+         </div>
+       </div>
+       <div class="footer_card">
+         <div class="card 3">
+           <div class="card_image">
+             <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+           </div>
+           <div class="card_title">
+<!--             <p>Card Title</p>-->
+           </div>
+         </div>
+       </div>
      </div>
    </div>
     <div fxLayout="row wrap" fxFlexAlign="space-between" fxLayoutGap="30px" class="mt-5">
       <div fxFlex fxFlex.xs="100" class="mt-3">
         <div>
-          <img src="../assets/logo.png" alt="logo" class="logo">
+          <img src="../assets/images/logo.png" alt="logo" class="logo">
         </div>
         <div class="mt-4">
           <p class="fr f14">24/7 roadside assistance service provider for <br> bikes & cars across india</p>
@@ -58,7 +94,7 @@
       <div fxFlex fxFlex.xs="100" class="mt-3">
         <h3 class="fw-bold f16 fb2">Address</h3>
         <div class="mt-3">
-          <p class="fr f14">Readyassist - 24/7 RSA <br>
+          <p class="fr f14">ReadyAssist - 24/7 RSA <br>
             #16, 17th cross, 9th main Rd, <br>
             Sector 7, HSR Layout <br>
             Bengaluru, Karnataka 560102
