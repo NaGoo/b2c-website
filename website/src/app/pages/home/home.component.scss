@@ -195,32 +195,6 @@ mat-form-field{
   background: linear-gradient(0deg, rgba(76,175,80,1) 30%, rgba(76,175,85,1) 100%);
   color: #FFFFFF;
 }
-.board_member{
-  height: 320px;
-  width: 320px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  background-color: #efeeee;
-  background-image: linear-gradient(to bottom left, #efeeee, #faf8f8);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h4{font-family: fSemiBold, sans-serif;font-size: 20px}
-  p{font-family: fRegular, sans-serif}
-  .icon{
-    cursor: pointer;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    i{color: #000000}
-  }
-  .profile {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: grey;
-  }
-}
 .news {
   .newsGrid {width: 300px}
   .newsGridLg {width: 350px}
@@ -251,4 +225,22 @@ mat-form-field{
     img {height: 100%;width: 100%}
   }
   .clientXs{width: 120px}
+}
+.partner_card {
+  padding: 0;
+  background: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  .image {
+    //height: 300px;
+    //width: 300px;
+  }
+  img {height: 100%;width: 100%;border-top-right-radius: 10px;border-top-left-radius: 10px}
 }
