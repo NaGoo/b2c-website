@@ -9,6 +9,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {CarouselModule} from 'ngx-owl-carousel-o';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -16,17 +17,18 @@ import {CarouselModule} from 'ngx-owl-carousel-o';
   declarations: [
     HomeComponent
   ],
-  imports: [
-    CommonModule,
-    homeRouting,
-    FlexLayoutModule,
-    GridModule,
-    MatButtonModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCheckboxModule,
-    CarouselModule
-  ]
+    imports: [
+        CommonModule,
+        homeRouting,
+        FlexLayoutModule,
+        GridModule,
+        MatButtonModule,
+        MatIconModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatCheckboxModule,
+        CarouselModule,
+        MatCardModule
+    ]
 })
 export class HomeModule { }

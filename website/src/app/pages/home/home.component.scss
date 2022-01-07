@@ -216,8 +216,6 @@ mat-form-field{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin-bottom: 130px;
-  //background: rgb(255,229,135);
-  //background: linear-gradient(3deg, rgba(255,229,135,1) 0%, rgba(255,190,11,1) 70%);
   background: rgb(245,245,245);
   background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(255,229,135,1) 19%, rgba(255,190,11,1) 57%);
   .client{
@@ -238,9 +236,48 @@ mat-form-field{
   &:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
-  .image {
-    //height: 300px;
-    //width: 300px;
-  }
   img {height: 100%;width: 100%;border-top-right-radius: 10px;border-top-left-radius: 10px}
+}
+
+.heading {
+  h1 {
+    animation: moveInLeft 1s ease-out;
+    letter-spacing: 3px;
+  }
+  .subHeading {
+    letter-spacing: 3px;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
