@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
       740: { items: 2 },
       810: { items: 2 },
       940: { items: 3 },
-      1024: { items: 4 },
+      1024: { items: 3 },
       1100: { items: 4 },
       1200: { items: 4 },
       1300: { items: 4 },
