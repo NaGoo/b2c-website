@@ -13,39 +13,21 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 export class AppComponent implements OnInit{
   title = 'website';
   scrolled = false;
-  hide = true;
-  isSubscriptionPage = false;
-  media: Subscription | undefined;
-  mobile: boolean | undefined;
   isMenuOpen = false;
-  // @ts-ignore
+  hide = true;
   @HostListener('window:scroll', ['$event'])
-
-
-  constructor(
-    public mediaObserver: MediaObserver,
-    private readonly router: Router,
-    // private readonly storageService: StorageService,
-    private readonly dialog: MatDialog,
-    @Inject(DOCUMENT) private readonly document: Document
-  ) {
-  }
-
   ngOnInit() {
     this.scrolled = window.pageYOffset > 40;
-    // this.media = this.mediaObserver.media$.subscribe((res: MediaChange) => {
-    //   this.mobile = res.mqAlias === 'xs';
-    // });
   }
   logOut() {
     // this.storageService.eraseCookie('customer');
-    this.document.location.reload();
+    // this.document.location.reload();
   }
   navigate(page: any) {
-    if (page) {
-      this.isMenuOpen = false;
-      // this.dialog.closeAll();
-      this.router.navigate([`/${page}`]).then();
-    }
+    // if (page) {
+    //   this.isMenuOpen = false;
+    //   // this.dialog.closeAll();
+    //   this.router.navigate([`/${page}`]).then();
+    // }
   }
 }
