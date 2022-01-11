@@ -5,6 +5,29 @@
   width: 100vw !important;
   z-index: 99;
 }
+.dropMenu {
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.75);
+  float: right;
+  margin: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  backdrop-filter: blur(16px) saturate(180%);
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 90px;
+
+  button {
+    &:hover {
+      color: white;
+      background-color: #000000;
+      box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%)
+    }
+  }
+}
 .logo{
   height: 50px;
 }

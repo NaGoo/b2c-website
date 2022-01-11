@@ -17,7 +17,7 @@
         </div>
         <div class="d-flex">
           <div class="mt-2" fxHide.xs><button mat-raised-button class="py-1 px-4 primary-btn f14 fb2"><span class="px-2 fw-bold fb3 f14 sp">Subscribe Now</span>&nbsp;<mat-icon class="mt-2 f16">star_border</mat-icon></button></div>
-          <div class="m-3" fxHide.gt-xs><mat-icon class="f28 ptr">menu</mat-icon></div>
+          <div class="m-3" fxHide.gt-xs><mat-icon class="f28 ptr" (click)='isMenuOpen = !isMenuOpen'>menu</mat-icon></div>
         </div>
       </div>
       <!--  <div fxLayout="row" fxFlexAlign="space-between center" class="pt-2">-->
@@ -117,4 +117,12 @@
   <div class="copyright"><div class="my-3 text-center text-light">
     <p class="text-muted">Copyright&nbsp;&copy;&nbsp;2015 - 2022 : ReadyAssist - 24hrs vehicle Care.</p>
   </div></div>
+</div>
+
+<div class='animate__animated animate__backInRight animate__faster dropMenu'  *ngIf='isMenuOpen'>
+  <button mat-button (click)='navigate("/")'>Home</button>
+  <button mat-button (click)='navigate("roadside-assistance-subscription-plans.php")'>Subscription</button>
+  <button mat-button (click)='navigate("about-us")'>About us</button>
+  <button mat-button (click)='navigate("contact-us")'>Contact us</button>
+  <button mat-button (click)='logOut()'>Logout</button>
 </div>

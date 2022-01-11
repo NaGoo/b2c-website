@@ -14,9 +14,23 @@
         <div fxFlex gdAlignColumns="center" gdAlignRows="start" class="ms-3 home_content" ngClass.xs="mobile">
           <div class="heading">
             <h1 class="fw-bolder fb1">24/7 onspot break-down support</h1>
+            <div class="mt-5 flip_container">
+              <div class="flip">
+                <ul class="list">
+                  <li>BATTERY JUMPSTART</li>
+                  <li>MINOR REPAIR</li>
+                  <li>KEY LOCK ASSISTANCE</li>
+                  <li>PUNCTURE REPAIR</li>
+                  <li>FUEL DELIVERY</li>
+                  <li>FLAT TYRE FIXING</li>
+                  <li>TOWING</li>
+                  <li>ACCIDENT RECOVERY</li>
+                </ul>
+              </div>
+            </div>
             <div class="my-5 subHeading"><p class="f24 fr">anytime anywhere in india</p></div>
           </div>
-          <div class="my-5"><button mat-raised-button class="py-2 primary-btn f14 fb2"><span class="f16 fw-bold fb2 sp">Book Service Now</span>
+          <div class="my-3"><button mat-raised-button class="py-2 primary-btn f14 fb2"><span class="f16 fw-bold fb2 sp">Book Service Now</span>
             &nbsp;<i class="icofont-double-right icofont-2x"></i>
           </button>
           </div>
@@ -45,8 +59,8 @@
       </div>
       <div class="mt-5 d-flex flex-row flex-wrap justify-content-evenly">
         <div *ngFor="let s of serviceList1" class="m-3 text-center">
-          <div class="d-flex justify-content-center"><img [src]="s.image" height="100" width="100" alt=""></div>
-          <p class="text-center fb3 f16">{{s.name}}</p>
+          <div class="d-flex justify-content-center ptr serviceImage"><img [src]="s.image" height="100" width="100" alt=""></div>
+          <p class="mt-2 text-center fb3 f16 ptr">{{s.name}}</p>
         </div>
       </div>
     </div>

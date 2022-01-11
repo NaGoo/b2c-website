@@ -8,6 +8,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {CarouselModule} from 'ngx-owl-carousel-o';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {CarouselModule} from 'ngx-owl-carousel-o';
     FlexLayoutModule.withConfig({ ssrObserveBreakpoints: ['xs', 'sm', 'md', 'lg', 'lt-md'] }),
     MatButtonModule,
     MatIconModule,
-    CarouselModule
+    CarouselModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
